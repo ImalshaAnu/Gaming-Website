@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <servlet>
+    <servlet-name>pymentinSer</servlet-name>
+    <servlet-class>com.payment2.pymentinSer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pymentinSer</servlet-name>
+    <url-pattern>/pymentinSer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetAllGames</display-name>
+    <servlet-name>GetAllGames</servlet-name>
+    <servlet-class>com.payment2.GetAllGames</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAllGames</servlet-name>
+    <url-pattern>/GetAllGames</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>updateServlet</display-name>
+    <servlet-name>updateServlet</servlet-name>
+    <servlet-class>com.payment2.updateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateServlet</servlet-name>
+    <url-pattern>/updateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteServlet</display-name>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>com.payment2.deleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/deleteServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

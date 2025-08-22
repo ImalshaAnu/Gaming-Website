@@ -1,0 +1,98 @@
+* {
+    font-family: Corbel, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(32, 25, 25);
+    background-image: url(deletepagebg.jpg);
+
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Makes the image cover the entire screen */
+    background-position: center; /* Centers the image */
+}
+
+.newAccountForm {
+    text-align: center;
+    color: white;
+    width: 35%;
+    background-color: #0000007b;
+    border: 2px solid rgb(100, 100, 100);
+    border-radius: 30px;
+    backdrop-filter: blur(5px);
+    padding: 50px;
+}
+
+/*all input boxes*/
+input:not([type="submit"]){
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(23, 23, 23, 0.845);
+    border: none;
+    color: white;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/*all input box animations*/
+input:not([type="button"]):focus {
+    border: 2px solid purple;
+    outline: none;
+    background-color: rgba(23, 23, 23, 1); /* Slight change in background for effect */
+}
+
+/*space between header and the input-boxes*/
+h1{
+    margin-bottom: 70px;
+    font-size: 40px;
+    font-weight:150;
+}
+
+.inputwrap{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 40px;
+    
+}
+
+.inputwrap .btn input{
+    width: 30%;
+    height: 40px;;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(3, 3, 139);
+    transition: all 500ms ease;
+}
+
+/*hover animation*/
+.inputwrap .btn input:hover {
+    width: 30%;
+    height: 40px;
+    color: white;
+    background-color: rgb(1, 189, 236);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    letter-spacing: 0.10em;
+    
+    /* Glowing effect */
+    box-shadow: 0 0 35px rgb(1, 189, 236), 0 0 60px rgb(1, 189, 236);
+}
+
+
+    
